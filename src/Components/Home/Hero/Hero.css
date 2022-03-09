@@ -1,0 +1,22 @@
+.hero-section {
+  background: #009adb14;
+}
+.hero-section-info {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-section-image {
+  margin-bottom: 30px;
+}
+.hero-section-image img {
+  width: 200px;
+  height: auto;
+}
+.hero-section-title h1 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4em;
+  font-size: 36px;
+}

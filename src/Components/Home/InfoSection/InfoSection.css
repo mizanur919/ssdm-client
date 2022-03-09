@@ -1,0 +1,20 @@
+.info-section {
+  font-family: "Poppins", sans-serif;
+  margin: 70px 0 40px 0;
+}
+.info-text {
+  margin-bottom: 20px;
+}
+.info-section h3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 30px 10px 30px 10px;
+  border-radius: 10px;
+  border: 1px solid #009adbad;
+  line-height: 1.4em;
+}
+.info-section h3:hover {
+  background-color: #ebf7fc;
+  transition: 0.5s;
+  cursor: pointer;
+}

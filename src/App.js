@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Components/Shared/Header/Header";
+import Footer from "./Components/Shared/Footer/Footer";
+import Home from "../src/Pages/Home/Home";
+import FHPayroll from "./Pages/FHPayroll/FHPayroll";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import NotFound from "./Pages/NotFound/NotFound";
+import SoftwareInstallResources from "./Pages/SoftwareInstallResources/SoftwareInstallResources";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/fhpayroll" element={<FHPayroll />}></Route>
+          <Route
+            path="/softwareInstallResources"
+            element={<SoftwareInstallResources />}
+          ></Route>
+          <Route path="*" element={<NotFound />}></Route>
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

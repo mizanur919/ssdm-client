@@ -1,0 +1,10 @@
+.pageNotFound-Image {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageNotFound-Image img {
+  width: 450px;
+  height: auto;
+}
